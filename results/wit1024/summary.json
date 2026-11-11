@@ -1,0 +1,33 @@
+{
+  "dataset": "minhuh/prh, revision wit_1024",
+  "n_pairs": 1024,
+  "metric": "mutual_knn",
+  "topk": 10,
+  "chance": 0.009775171065493646,
+  "mean_null": 0.009838867345824837,
+  "llm_models": [
+    "bigscience/bloomz-560m",
+    "bigscience/bloomz-1b1",
+    "bigscience/bloomz-1b7",
+    "bigscience/bloomz-3b",
+    "bigscience/bloomz-7b1"
+  ],
+  "lvm_models": [
+    "vit_small_patch14_dinov2.lvd142m",
+    "vit_base_patch14_dinov2.lvd142m",
+    "vit_large_patch14_dinov2.lvd142m",
+    "vit_giant_patch14_dinov2.lvd142m"
+  ],
+  "llm_dtype": "torch.float16",
+  "best_pair": {
+    "llm": "bigscience/bloomz-7b1",
+    "lvm": "vit_giant_patch14_dinov2.lvd142m",
+    "score": 0.13134765625
+  },
+  "versions": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "timm": "1.0.30"
+  }
+}
